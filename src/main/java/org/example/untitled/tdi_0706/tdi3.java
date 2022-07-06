@@ -45,9 +45,31 @@ class tdi3 {
 }
 
 abstract class 오리 {
-    날다여부 날;
+    비행아이템 a비행아이템;
+    오리(){
+        a비행아이템 = new 날개비행아이템();
+    }
     void 날다() {
-        날.작동();
+        a비행아이템.작동();
+    }
+}
+abstract class 비행아이템 {
+    abstract void 작동();
+}
+class 날개비행아이템 extends  비행아이템{
+    void 작동() {
+        System.out.println("날개로 날아갑니다.");
+    }
+}
+class 로켓비행아이템 extends 비행아이템 {
+    void 작동() {
+        System.out.println("로켓파워로 날아갑니다.");
+    }
+}
+
+class 염력비행아이템 extends 비행아이템 {
+    void 작동() {
+        System.out.println("염력으로 날아갑니다.");
     }
 }
 abstract class 날다여부{
@@ -74,13 +96,11 @@ class 못날다 extends 날다여부 {
 // 메서드는 동사이다.
 class 흰오리 extends 오리 {
     흰오리(){
-        날 = new 날다();
     }
 }
 
 class 청둥오리 extends 오리 {
     청둥오리(){
-        날 = new 날다();
     }
 
 }
@@ -90,13 +110,12 @@ class 고무오리 extends 오리 {
     // 메서드 오버라이드 라고도 합니다.
     // 메서드 재정의 => 부모가 물려준 능력을 다시 구현한다.
     고무오리(){
-        날 = new 못날다();
     }
 
 }
 
 class 고무2오리 extends 오리 {
     고무2오리() {
-        날 = new 못날다();
+        a비행아이템 = new 로켓비행아이템();
     }
 }

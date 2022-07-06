@@ -1,5 +1,5 @@
 package org.example.untitled.tdi_0706;
-
+// tdi 1 번
 public class tdi_answer {
     public static void main(String[] args) {
         전사1 a전사 = new 전사1();
