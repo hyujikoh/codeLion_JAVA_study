@@ -6,6 +6,9 @@ public class tdi_0707 {
         new 사람();
     }
 }
+/**
+ *
+ * */
 class 동물 {
     동물(String 이름) {
         System.out.println("동물(String 이름) 실행됨!");
@@ -18,7 +21,7 @@ class 동물 {
     }
 }
 class 사람 extends 동물 {
-
+// 부모 메서드를 사용하기 위해 super 를 사용
     사람(){
         super("철수",20);
 
