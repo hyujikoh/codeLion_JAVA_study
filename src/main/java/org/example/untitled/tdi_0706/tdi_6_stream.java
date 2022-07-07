@@ -7,9 +7,11 @@ public class tdi_6_stream {
     public static void main(String[] args) {
             int sum = Arrays
             .stream(sLine.split(" "))
-            .filter((s) -> s.matches("\\d+"))
+            .filter((s) -> s.matches("\\d+|^-\\d+"))
             .mapToInt(Integer::parseInt)
             .sum();
+
+        System.out.println(sum);
 
     }
 }
