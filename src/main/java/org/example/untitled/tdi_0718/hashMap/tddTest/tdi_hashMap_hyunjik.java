@@ -25,6 +25,7 @@ class HashMap<K,V>{
             values[index]=value;
         }
     }
+
     Object get_key(Object key) {
 
         int index = indexOfKey(key);
@@ -45,4 +46,17 @@ class HashMap<K,V>{
         return index;
     }
 
+    public void remove(K key) {
+        int index = indexOfKey(key);
+        for(int i = index ; i< lastIndex; i++){
+            keys[i] = keys[i + 1];
+            values[i] = values[i + 1];
+        }
+        size--;
+
+    }
+
+    public int size() {
+        return size;
+    }
 }

@@ -51,4 +51,20 @@ class HashMapTest {
 
         assertEquals(27, ages.get_key("영희"));
     }
+    @Test
+    void remove_7단계() {
+        HashMap<String, Integer> ages = new HashMap<>();
+        ages.put("철수", 22);
+        assertEquals(1, ages.size());
+
+        ages.put("영희", 25);
+        assertEquals(2, ages.size());
+
+        ages.remove("영희");
+
+        assertEquals(1, ages.size());
+
+        ages.remove("철수");
+        assertEquals(0, ages.size());
+    }
 }
