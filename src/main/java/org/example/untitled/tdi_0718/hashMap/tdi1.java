@@ -1,5 +1,6 @@
 package org.example.untitled.tdi_0718.hashMap;
 //code.oa.gg/java8/1127
+// 1단계
 public class tdi1 {
     public static void main(String[] args) {
         HashMap aMap = new HashMap();
