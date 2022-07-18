@@ -20,5 +20,10 @@ class HashMapTest {
     void 제너릭이_가능하다_2단계() {
         HashMap<String, Integer> map = new HashMap<>();
     }
+    @Test
+    void put_3단계() {
+        HashMap<String, Integer> ages = new HashMap<>();
+        ages.put("철수", 22);
+    }
 
 }
