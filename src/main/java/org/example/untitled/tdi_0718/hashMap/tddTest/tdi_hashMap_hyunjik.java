@@ -1,5 +1,9 @@
 package org.example.untitled.tdi_0718.hashMap.tddTest;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+
 public class tdi_hashMap_hyunjik {
 }
 class HashMap<K,V>{
@@ -58,5 +62,15 @@ class HashMap<K,V>{
 
     public int size() {
         return size;
+    }
+
+    public List<K> keySet() {
+        List<K> keySet = new ArrayList<>();
+
+        for ( int i = 0; i < size; i++ ) {
+            keySet.add((K)keys[i]);
+        }
+
+        return keySet;
     }
 }
