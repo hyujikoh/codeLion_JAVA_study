@@ -16,16 +16,16 @@ public class tdi1 {
             System.out.println("이름 : " + name + ", 나이 : " + ages.get(name));
         }
         /* 출력결과 */
-        // 이름 : 철수, 나이 : 27
-        // 이름 : 민서, 나이 : 25
-        // 이름 : 광수, 나이 : 27
-//        HashMap<String, Object> everyone = new HashMap<>();
-//        everyone.put("사람", new 사람());
-//        everyone.put("원숭이", new 원숭이());
-//        ((사람)everyone.get("사람")).말하다();
-//        // 출력 => 사람이 말합니다.
-//        ((원숭이)everyone.get("원숭이")).묘기를_부리다();
-//        // 출력 => 원숭이가 묘기를 부립니다.
+//         이름 : 철수, 나이 : 27
+//         이름 : 민서, 나이 : 25
+//         이름 : 광수, 나이 : 27
+        HashMap<String, Object> everyone = new HashMap<>();
+        everyone.put("사람", new 사람());
+        everyone.put("원숭이", new 원숭이());
+        ((사람)everyone.get("사람")).말하다();
+        // 출력 => 사람이 말합니다.
+        ((원숭이)everyone.get("원숭이")).묘기를_부리다();
+        // 출력 => 원숭이가 묘기를 부립니다.
     }
 }
 
