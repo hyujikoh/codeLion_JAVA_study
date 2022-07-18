@@ -7,11 +7,19 @@ public class tdi1 {
 
         aMap.put(1, "안녕");
         aMap.put("A", false);
+        System.out.println(aMap.get("A"));
+        // 출력 : false
     }
 }
 
 class HashMap {
+    Object i,j;
     void put(Object i, Object j){
+        this.i=i;
+        this.j=j;
+    }
+    Object get(Object i){
+        return j;
     }
 
 }
