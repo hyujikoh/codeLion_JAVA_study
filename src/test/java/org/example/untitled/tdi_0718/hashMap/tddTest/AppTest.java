@@ -42,5 +42,13 @@ class HashMapTest {
         assertEquals(22, ages.get_key("철수"));
         assertEquals(25, ages.get_key("영희"));
     }
+    @Test
+    void put__데이터_수정_6단계() {
+        HashMap<String, Integer> ages = new HashMap<>();
+        ages.put("철수", 22);
+        ages.put("영희", 25);
+        ages.put("영희", 27);
 
+        assertEquals(27, ages.get_key("영희"));
+    }
 }

@@ -14,10 +14,16 @@ class HashMap<K,V>{
         values = new Object[100];
     }
     void put(Object key,  Object value) {
-        lastIndex++;
-        keys[lastIndex]=key;
-        values[lastIndex]=value;
-        size++;
+        int index = indexOfKey(key);
+        if (index==-1){
+            lastIndex++;
+            keys[lastIndex]=key;
+            values[lastIndex]=value;
+            size++;
+        }
+        else{
+            values[index]=value;
+        }
     }
     Object get_key(Object key) {
 
