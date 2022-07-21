@@ -68,7 +68,7 @@ class HashMapTest {
         assertEquals(0, ages.size());
     }
     @Test
-    void keySet() {
+    void keySet_8단계() {
         HashMap<String, Integer> ages = new HashMap<>();
         ages.put("철수", 22);
         ages.put("영희", 25);
